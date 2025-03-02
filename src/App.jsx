@@ -12,6 +12,11 @@ function App() {
       <div className='cardContainer'>
         <Flipcard/>
       </div>
+      <div className='buttonsGroup'>
+        <button>Back</button>
+        <button>Next</button>
+      </div>
+      
     </>
   )
 }
