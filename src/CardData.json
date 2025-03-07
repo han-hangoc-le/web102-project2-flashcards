@@ -1,0 +1,131 @@
+[
+
+    {
+        "cardName":"Phở",
+        "cardImg": "/pho.jpg",
+        "difficulty": "easy"
+    },
+    {
+        "cardName":"Bún chả",
+        "cardImg": "/buncha.jpg",
+        "difficulty": "easy"
+    },
+    {
+        "cardName":"Cơm tấm",
+        "cardImg": "/comtam.webp",
+        "difficulty": "easy"
+    },
+    {
+        "cardName":"Bánh mỳ",
+        "cardImg": "/banhmy.jpg",
+        "difficulty": "easy"
+    },
+    {
+        "cardName":"Chả giò",
+        "cardImg": "/chagio.jpg",
+        "difficulty": "easy"
+    },
+    {
+        "cardName":"Gỏi cuốn",
+        "cardImg": "/goicuon.avif",
+        "difficulty": "easy"
+    },
+    {
+        "cardName":"Cà phê sữa đá",
+        "cardImg": "/caphesuada.jpg",
+        "difficulty": "easy"
+    },
+    {
+        "cardName":"Chè",
+        "cardImg": "/che.jpg",
+        "difficulty": "easy"
+    },
+
+
+
+
+    {
+        "cardName":"Bún mắm",
+        "cardImg": "/bunmam.jpg",
+        "difficulty": "medium"
+    },
+    {
+        "cardName":"Mỳ quảng",
+        "cardImg": "/myquang.png",
+        "difficulty": "medium"
+    },
+    {
+        "cardName":"Bánh xèo",
+        "cardImg": "/banhxeo.jpg",
+        "difficulty": "medium"
+    },
+    {
+        "cardName":"Bánh bèo",
+        "cardImg": "/banhbeo.jpg",
+        "difficulty": "medium"
+    },
+    {
+        "cardName":"Bánh canh",
+        "cardImg": "/banhcanh.jpg",
+        "difficulty": "medium"
+    },
+    {
+        "cardName":"Cơm gà",
+        "cardImg": "/comga.jpg",
+        "difficulty": "medium"
+    },
+    {
+        "cardName":"Bún bò",
+        "cardImg": "/bunbo.webp",
+        "difficulty": "medium"
+    },
+    {
+        "cardName":"Bò lá lốt",
+        "cardImg": "/bolalot.jpg",
+        "difficulty": "medium"
+    },
+
+
+
+
+    {
+        "cardName":"Cút lộn xào me",
+        "cardImg": "/cutlonxaome.jpg",
+        "difficulty": "hard"
+    },
+    {
+        "cardName":"Bánh tráng pate",
+        "cardImg": "/banhtrangpate.jpg",
+        "difficulty": "hard"
+    },
+    {
+        "cardName":"Cơm hến",
+        "cardImg": "/comhen.jpg",
+        "difficulty": "hard"
+    },
+    {
+        "cardName":"Bún chả cá",
+        "cardImg": "/bunchaca.jpg",
+        "difficulty": "hard"
+    },
+    {
+        "cardName":"Bún đậu mắm tôm",
+        "cardImg": "/bundaumamtom.jpg",
+        "difficulty": "hard"
+    },
+    {
+        "cardName":"Ốc lễ",
+        "cardImg": "/ocle.jpg",
+        "difficulty": "hard"
+    },
+    {
+        "cardName":"Xôi bắp",
+        "cardImg": "/xoibap.jpg",
+        "difficulty": "hard"
+    },
+    {
+        "cardName":"Nậm lọc",
+        "cardImg": "/namloc.jpg",
+        "difficulty": "hard"
+    }
+]
