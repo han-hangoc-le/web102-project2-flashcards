@@ -14,17 +14,17 @@ The following **required** functionality is completed:
 - [x] **A single card at a time is displayed, only showing one of the components of the information pair**
 - [x] **A list of card pairs is created**
 - [x] **Clicking on the card shows the corresponding component of the information pair**
-- [ ] **Clicking the next button displays a random new card**
+- [x] **Clicking the next button displays a random new card**
 
 The following **optional** features are implemented:
 
 - [x] Cards contains images in addition to or in place of text
-- [ ] Cards have different visual styles such as color based on their category
-- [ ] *visual style implemented*
+- [x] Cards have different visual styles such as color based on their category
+- [x] *visual style implemented*
 
 The following **additional** features are implemented:
 
-* [ ] List anything else that you added to improve the site's functionality!
+* [ ] A 'back' button to go back to the previous card
 
 ## Video Walkthrough
 

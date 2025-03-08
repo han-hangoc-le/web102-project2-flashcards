@@ -1,7 +1,6 @@
 import './Flipcard.css'
-import { useState } from "react";
 
-export default function Flipcard({ cardImg, cardName, isFlipped, setFlipped }) {
+export default function Flipcard({ cardImg, cardName, isFlipped, setFlipped, bgColor }) {
     const handleFlip = () => {
         setFlipped(!isFlipped)
     }
@@ -10,10 +9,10 @@ export default function Flipcard({ cardImg, cardName, isFlipped, setFlipped }) {
         <>
             <div className='flipcard' onClick={handleFlip}>
                 <div className={`flipcardInner ${isFlipped ? "flipped" : ""}`}>
-                    <div className='flipcardFront'>
+                    <div className='flipcardFront' style={{backgroundColor: bgColor}}>
                       <img src={cardImg} alt={cardName} className='image'/>
                     </div>
-                    <div className='flipcardBack'>
+                    <div className='flipcardBack' style={{backgroundColor: bgColor}}>
                         <p>{cardName}</p>
                     </div>
                 </div>

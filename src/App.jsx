@@ -15,6 +15,7 @@ const shuffleArray = (array) => {
 };
 
 function App() {
+  // ************** shuffling and displaying cards
   const [shuffledCards, setShuffledCards] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setFlipped] = useState(false);
@@ -38,15 +39,25 @@ function App() {
     }
   };
 
+  // ************** changing the bg of the card
+  const difficultyColors = {
+    easy: "#FFE48A",
+    medium: "#FC8552",
+    hard: "#D44848"
+  };
+
+  const bgColor = difficultyColors[shuffledCards[currentIndex]?.difficulty];
+
   return (
     <>  
       <Header/>
       <div className='cardContainer'>
         <Flipcard
-        cardImg={cards[currentIndex].cardImg}
-        cardName={cards[currentIndex].cardName}
+        cardImg={shuffledCards[currentIndex]?.cardImg}
+        cardName={shuffledCards[currentIndex]?.cardName}
         isFlipped={isFlipped}
-        setFlipped={setFlipped}/>
+        setFlipped={setFlipped}
+        bgColor={bgColor}/>
       </div>
       <div className='buttonsGroup'>
         <button onClick={handleBack}>Back</button>
