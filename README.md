@@ -4,7 +4,7 @@ Submitted by: **Han Le**
 
 This web app: **Flashcards to learn more about Vietnamese food cuisine. You will be given a picture and identify the name of the dish. There will be 3 difficulty levels for you to learn Vietnamese dishes "pho real" now!**
 
-Time spent: **X** hours spent in total
+Time spent: **9** hours spent in total
 
 ## Required Features
 
@@ -24,7 +24,8 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-* [ ] A 'back' button to go back to the previous card
+* [x] A 'back' button to go back to the previous card
+* [x] A 'restart' button to reshuffle the card when the list is finished
 
 ## Video Walkthrough
 
@@ -33,16 +34,15 @@ Here's a walkthrough of implemented required features:
 <img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  
-<!-- Recommended tools:
-[Kap](https://getkap.co/) for macOS
-[ScreenToGif](https://www.screentogif.com/) for Windows
-[peek](https://github.com/phw/peek) for Linux. -->
+GIF created with [ScreenToGif](https://www.screentogif.com/) for Windows
 
 ## Notes
 
 Describe any challenges encountered while building the app.
+- The hardest part is to figure out and apply the reference flipping card effect to my own cards
 - I have learnt what are the key codes to create the flipping effect, creating the next button to traverse through an array (of cards) and to change the CSS based on a certain property of the element (in this case, the card difficulty)
+- I also struggled a bit with implementing the restart function to the cards
+- The challenging part of this project is to understand the use of useState and useEffect to implement the desired functionalities
 
 ## License
 
