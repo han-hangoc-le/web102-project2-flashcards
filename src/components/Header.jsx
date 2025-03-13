@@ -8,7 +8,7 @@ export default function Header() {
             <h2 className='subtitle'>Learn the names of Vietnamese delicous food</h2>
             <p className='para'>Xin chào, my name is Han Le. I created this little flashcard stacks for you to learn more about our food cuisine.
                 <br/>Hope your stomach will "rột rột" and you will get the urge to "nhồm nhoàm" some Vietnamese food afterwards!</p>
-            <p className='subtitle' style={{marginBottom: '0', fontSize: '140%', marginBottom: '2%'}}>Number of cards: 24</p>
+            <p className='subtitle' style={{marginBottom: '0', fontSize: '140%'}}>Number of cards: 24</p>
 
             
 
