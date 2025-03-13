@@ -6,40 +6,28 @@
   text-align: center;
 }
 
-.cardContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.buttons {
-  background-color: #8e2424;
+.title {
   font-family: 'VietXua1';
+  color: #ffd071;
+  font-size: 300%;
+  margin: 0;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 
-.buttons:hover {
-  border-color: #ffe1a0;
-  border-width: thin;
-}
-
-.buttonsGroup {
-  display: flex;
-  flex-direction: row;
-  gap: 5%;
-  justify-content: center;
-  align-items: center;
-  padding: 5%;
-}
-
-.restartButton {
-  margin-top: 5%;
-  background-color: #8e2424;
+.subtitle {
   font-family: 'VietXua1';
+  color: #ffe4ae;
+  font-size: 170%;
+  margin: 0;
+  margin-bottom: 5%;
 }
 
-.restartButton:hover {
-  border-color: #ffe1a0;
-  border-width: thin;
+.para {
+  font-family: 'Typing';
+  color: #ffe4ae;
+  font-size: 100%;
+  letter-spacing: 1px;
 }
 
 /* Importing fonts */

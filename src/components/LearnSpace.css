@@ -1,0 +1,82 @@
+.streakTracker {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+}
+
+/* --------------------------------- */
+
+.cardContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttons {
+    background-color: #8e2424;
+    font-family: 'VietXua1';
+}
+
+.buttons:hover {
+    border-color: #ffe1a0;
+    border-width: thin;
+}
+
+.buttonsGroup {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+}
+
+.restartButton {
+    margin-top: 5%;
+    background-color: #8e2424;
+    font-family: 'VietXua1';
+}
+
+.restartButton:hover {
+    border-color: #ffe1a0;
+    border-width: thin;
+}
+
+/* --------------------------------- */
+.typingAnswer {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+}
+
+/* .input[type=text] {
+    font-family: 'VietXua1';
+    color: #8e2424;
+    font-size: 70%;
+
+    margin: 0;
+    height: 7%;
+    padding: 1%;
+    background-color: #ffe4ae;
+} */
+
+.test {
+    font-family: 'VietXua1';
+    color: #8e2424;
+    font-size: 70%;
+
+    margin: 0;
+    height: 7%;
+    width: 35%;
+    padding: 1%;
+    background-color: #ffe4ae;
+}
+
+::placeholder {
+    color: #8f6161;
+  }

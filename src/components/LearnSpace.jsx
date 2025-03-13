@@ -13,7 +13,7 @@ const shuffleArray = (array) => {
   };
 
 export default function LearnSpace() {
-    // ************** shuffling mechanics - next/back buttons
+    // ************** shuffling mechanics - next/back/submit buttons
   const [shuffledCards, setShuffledCards] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setFlipped] = useState(false);
@@ -37,6 +37,10 @@ export default function LearnSpace() {
       setCurrentIndex(currentIndex - 1);
     }
   };
+
+  const handleSubmit = () => {
+    
+  }
 
   // ************** finish set handling
   const [finished, setFinished] = useState(false);
@@ -63,6 +67,10 @@ export default function LearnSpace() {
 
     return (
        <>
+       <div className='streakTracker'>
+            <p className='para'>Current Streak: 10</p>
+            <p className='para'>Longest Streak: 10</p>
+       </div>
         <div className='cardContainer'>
             {finished ? (
                 <>
@@ -83,6 +91,10 @@ export default function LearnSpace() {
                 bgColor={bgColor}/>
             )}
             
+        </div>
+        <div className='typingAnswer'>
+            <input type='text' placeholder='Enter your dish name...' className='test'></input>
+            <button onClick={handleSubmit} className='buttons'>Submit</button>
         </div>
         <div className='buttonsGroup'>
             <button onClick={handleBack} className='buttons'>Back</button>
