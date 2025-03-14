@@ -2,6 +2,7 @@ import './LearnSpace.css'
 import { useState, useEffect } from 'react'
 import Flipcard from './Flipcard.jsx'
 import cards from '../CardData.json'
+import stringSimilarity from "string-similarity"
 
 const shuffleArray = (array) => {
     let shuffled = [...array];
@@ -64,8 +65,15 @@ export default function LearnSpace() {
   const [streak, setStreak] = useState(0)
   const [longestStreak, setlongestStreak] = useState(0)
 
+  const removeDiacritics = (str) => {
+    return str.normalize("NFD").replace(/[\u0300-\u036f]/g, ""); 
+  };  
+
   const handleSubmit = () => {
-    if (userInput.trim().toLowerCase() === shuffledCards[currentIndex].cardName.trim().toLowerCase()) {
+    const answer = removeDiacritics(userInput.trim().toLowerCase())
+    const correctAns = removeDiacritics(shuffledCards[currentIndex].cardName.trim().toLowerCase())
+    const similarity = stringSimilarity.compareTwoStrings(answer, correctAns)
+    if (similarity > 0.8) {
         setIsCorrect(true)
         if (streak + 1 > longestStreak) setlongestStreak(streak + 1)
         setStreak(streak + 1)
