@@ -50,7 +50,7 @@
     flex-direction: row;
     gap: 5%;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     padding-top: 5%;
 }
 
@@ -65,18 +65,48 @@
     background-color: #ffe4ae;
 } */
 
-.test {
+.answerBox {
+    justify-content: start;
+    align-items: start;
+    width: 35%;
+    height: 3vh;
+}
+
+.inputField {
     font-family: 'VietXua1';
     color: #8e2424;
     font-size: 70%;
 
     margin: 0;
-    height: 7%;
-    width: 35%;
+    height: 100%;
+    width: 100%;
     padding: 1%;
+    padding-left: 2%;
     background-color: #ffe4ae;
+}
+
+.feedback {
+    align-items: start;
+    font-family: 'Typing';
+    font-size: small;
+}
+
+.correctText {
+    color: green;
+}
+
+.incorrectText {
+    color: red;
 }
 
 ::placeholder {
     color: #8f6161;
-  }
+}
+
+.correct {
+    border: 2px solid green;
+}
+
+.incorrect {
+    border: 2px solid red;
+}

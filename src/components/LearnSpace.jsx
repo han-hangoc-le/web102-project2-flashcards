@@ -13,7 +13,8 @@ const shuffleArray = (array) => {
   };
 
 export default function LearnSpace() {
-    // ************** shuffling mechanics - next/back/submit buttons
+
+    // ************** shuffling mechanics - next/back buttons
   const [shuffledCards, setShuffledCards] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setFlipped] = useState(false);
@@ -26,6 +27,8 @@ export default function LearnSpace() {
     if (currentIndex < shuffledCards.length - 1) {
       setFlipped(false); // Reset flip state to front
       setCurrentIndex(currentIndex + 1);
+      setUserInput("")
+      setIsCorrect(null)
     } else {
       setFinished(true)
     }
@@ -37,10 +40,6 @@ export default function LearnSpace() {
       setCurrentIndex(currentIndex - 1);
     }
   };
-
-  const handleSubmit = () => {
-    
-  }
 
   // ************** finish set handling
   const [finished, setFinished] = useState(false);
@@ -54,8 +53,29 @@ export default function LearnSpace() {
     setCurrentIndex(0)
     setFinished(false)
     setFlipped(false)
+    setStreak(0)
+    setUserInput("")
+    setIsCorrect(null)
   }
 
+  // ************** user answer handling
+  const [userInput, setUserInput] = useState("")
+  const [isCorrect, setIsCorrect] = useState(null)
+  const [streak, setStreak] = useState(0)
+  const [longestStreak, setlongestStreak] = useState(0)
+
+  const handleSubmit = () => {
+    if (userInput.trim().toLowerCase() === shuffledCards[currentIndex].cardName.trim().toLowerCase()) {
+        setIsCorrect(true)
+        if (streak + 1 > longestStreak) setlongestStreak(streak + 1)
+        setStreak(streak + 1)
+    } else {
+        setIsCorrect(false)
+        setStreak(0)
+    }
+  } 
+
+  
   // ************** changing the bg of the card
   const difficultyColors = {
     easy: "#FFE48A",
@@ -68,8 +88,8 @@ export default function LearnSpace() {
     return (
        <>
        <div className='streakTracker'>
-            <p className='para'>Current Streak: 10</p>
-            <p className='para'>Longest Streak: 10</p>
+            <p className='para'>Current Streak: {streak}</p>
+            <p className='para'>Longest Streak: {longestStreak}</p>
        </div>
         <div className='cardContainer'>
             {finished ? (
@@ -92,10 +112,23 @@ export default function LearnSpace() {
             )}
             
         </div>
+
         <div className='typingAnswer'>
-            <input type='text' placeholder='Enter your dish name...' className='test'></input>
+            <div className='answerBox'>
+                <input
+                    type='text'
+                    placeholder='Enter your dish name...'
+                    value = {userInput}
+                    onChange={(e) => setUserInput(e.target.value)}
+                    className={`inputField ${isCorrect === true ? 'correct' : isCorrect === false ? 'incorrect' : ''}`}/>
+                <p className={`feedback ${isCorrect === true ? 'correctText' : isCorrect === false ? 'incorrectText' : ''}`} style={{margin:'0'}}>
+                    {isCorrect === true ? 'You got it!' : isCorrect === false ? 'Uh oh... Try again!' : ''}
+                </p>
+            </div>
+            
             <button onClick={handleSubmit} className='buttons'>Submit</button>
         </div>
+       
         <div className='buttonsGroup'>
             <button onClick={handleBack} className='buttons'>Back</button>
             <button onClick={handleNext} className='buttons'>Next</button>
