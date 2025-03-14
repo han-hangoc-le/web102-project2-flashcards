@@ -88,13 +88,16 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://github.com/han-hangoc-le/web102-project2-flashcards/blob/main/public/FlashcardPt2.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [ScreenToGif](https://www.screentogif.com/) for Windows
 
 ## Notes
 
 Describe any challenges encountered while building the app.
+- This second part is easier compared to the first part, since I'm now more familiar with useState and useEffect.
+- One new thing that I learned is how to format the input box to have a certain style based on the state of the answer.
+- I also learned how to remove accents from Vietnamese words and use string-similiarity to create a threshold for correct answers.
 
 ## License
 
